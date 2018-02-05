@@ -1,0 +1,6 @@
+[ClassVersion("1.0"), FriendlyName("cJEAConfiguration")]
+class cJEAConfiguration : OMI_BaseResource
+{
+	[Key] String EndpointName;
+	[Required , EmbeddedInstance("MSFT_Credential"), Description("Account Used to create the Configuration.")] String ConfigurationAccount;
+};
